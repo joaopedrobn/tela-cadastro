@@ -2,7 +2,7 @@
 
 ![image](https://github.com/user-attachments/assets/fa425911-9d07-4f4d-afa0-a08207973528)
 
-Acesse o projeto [aqui](https://github.com/joaopedrobn/tela-cadastro).
+Acesse o projeto [aqui](https://joaopedrobn.github.io/tela-cadastro/).
 
 ## 📌 Descrição
 
