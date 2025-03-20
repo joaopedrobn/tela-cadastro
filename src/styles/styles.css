@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   padding: 0;
@@ -48,13 +48,13 @@ body {
   box-shadow: 0px 10px 15px -3px rgba(black, black, black, 0.1);
 }
 
-#form-header {
+#form_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#form-title {
+#form_title {
   font-weight: 500;
   color: #272727;
   position: relative;
@@ -80,7 +80,7 @@ body {
 }
 
 #input_container {
-  display: flex;
+  display: grid;
   gap: 24px;
 }
 
@@ -90,7 +90,7 @@ body {
   font-weight: 500;
 }
 
-.input-fiel {
+.input-field {
   display: flex;
   align-items: center;
   background-color: white;
@@ -98,7 +98,7 @@ body {
   box-shadow: 0px 10px 15px -3px rgba(black, black, black, 0.1);
 }
 
-.input-fiel i {
+.input-field i {
   display: flex;
   align-items: center;
   height: 20px;
@@ -111,4 +111,59 @@ body {
   width: 100%;
   border: none;
   border-radius: 8px;
+}
+
+.input-field .password-icon:hover {
+  cursor: pointer;
+  color: #676770;
+}
+
+.form-control:focus {
+  outline: none;
+}
+
+.input-box .input-field:focus-within {
+  outline: 2px solid #6366f1;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  color: #000;
+}
+
+.radio-container {
+  grid-column: span 2;
+}
+
+#gender_inputs {
+  display: flex;
+  gap: 20px;
+}
+
+.radio-box {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.form-control[type="radio"] {
+  accent-color: #6366f1;
+}
+
+@media screen and (max-width: 500px) {
+  #form_container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 32px;
+  }
+
+  #input_container {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+  }
+
+  .form-control[type="date"] {
+    background-color: white;
+  }
 }
